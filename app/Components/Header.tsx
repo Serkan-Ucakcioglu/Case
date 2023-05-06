@@ -1,5 +1,6 @@
 import Logo from "../assets/Logo";
 import Search from "../assets/Search";
+import SearchBar from "./SearchBar";
 function Header() {
   return (
     <div className="flex flex-col">
@@ -10,20 +11,13 @@ function Header() {
       <div className="flex w-full items-center mt-[40px]">
         <ul className="flex gap-x-8">
           <li className="active">Tüm Etkinlikler</li>
-          <li>Tiyatro</li>
+          <li className="focus:active">Tiyatro</li>
           <li>Konser</li>
           <li>Stand Up</li>
           <li>Sinema</li>
           <li>Cocuk</li>
         </ul>
-        <div className="flex items-center border border-gray-200 py-3 p-1 focus:border-black hover:border-gray-400">
-          <Search />
-          <input
-            type="text"
-            placeholder="Etkinlik Ara"
-            className="outline-none ml-1"
-          />
-        </div>
+        <SearchBar />
       </div>
     </div>
   );
