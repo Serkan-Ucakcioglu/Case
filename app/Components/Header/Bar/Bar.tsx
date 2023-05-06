@@ -10,7 +10,7 @@ function Bar() {
     <>
       <div className="w-full flex justify-between p-4 bg-[#F5F5F5] mt-6 px-12">
         <div
-          className="flex justify-center ml-2"
+          className="flex items-center ml-2"
           onMouseEnter={() => setShow(true)}
           onMouseLeave={() => setShow(false)}
         >

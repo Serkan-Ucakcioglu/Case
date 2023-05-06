@@ -5,7 +5,7 @@ function BarPopup({ setShow }: any) {
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      se{" "}
+      se
     </div>
   );
 }
