@@ -1,6 +1,6 @@
 import Logo from "@/app/assets/Logo";
 import Main from "./Main/Main";
-import Bar from "./Bar";
+import Bar from "./Bar/Bar";
 
 function Header() {
   return (
