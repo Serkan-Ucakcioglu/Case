@@ -1,6 +1,6 @@
 import Logo from "../assets/Logo";
-import Search from "../assets/Search";
 import SearchBar from "./SearchBar";
+
 function Header() {
   return (
     <div className="flex flex-col">
