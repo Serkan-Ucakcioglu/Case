@@ -1,5 +1,4 @@
-import Search from "../assets/Search";
-
+import Search from "../../../assets/Search";
 function SearchBar() {
   return (
     <>

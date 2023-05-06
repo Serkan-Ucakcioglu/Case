@@ -1,13 +1,8 @@
-import Logo from "../assets/Logo";
 import SearchBar from "./SearchBar";
 
-function Header() {
+function Main() {
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex flex-col items-center">
-        <Logo />
-        <h1 className="head-title mt-[45px] font-bold">ETKİNLİKLER</h1>
-      </div>
+    <>
       <div className="flex relative justify-center px-4 items-center mt-[40px]">
         <ul className="flex  gap-x-8">
           <li className="active">Tüm Etkinlikler</li>
@@ -19,8 +14,8 @@ function Header() {
         </ul>
         <SearchBar />
       </div>
-    </div>
+    </>
   );
 }
 
-export default Header;
+export default Main;
