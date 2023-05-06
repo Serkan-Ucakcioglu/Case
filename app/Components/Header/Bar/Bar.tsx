@@ -12,7 +12,6 @@ function Bar() {
         <div
           className="flex items-center ml-2"
           onMouseEnter={() => setShow(true)}
-          onMouseLeave={() => setShow(false)}
         >
           <Points />
           <span className="ml-2 text-[#FF0D87]">Filtreler</span>
