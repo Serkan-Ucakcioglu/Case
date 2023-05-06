@@ -3,7 +3,7 @@ import Points from "@/app/assets/Points";
 
 function Bar() {
   return (
-    <div className="w-full flex justify-between p-3 bg-[#F5F5F5] mt-6 px-12">
+    <div className="w-full flex justify-between p-4 bg-[#F5F5F5] mt-6 px-12">
       <div className="flex items-center ml-2">
         <Points />
         <span className="ml-2 text-[#FF0D87]">Filtreler</span>
