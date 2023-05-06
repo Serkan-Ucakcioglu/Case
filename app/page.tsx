@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5">
+    <main className="flex flex-col items-center justify-between py-5">
       <Header />
     </main>
   );
