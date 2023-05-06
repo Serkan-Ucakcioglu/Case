@@ -8,8 +8,8 @@ function Header() {
         <Logo />
         <h1 className="head-title mt-[45px] font-bold">ETKİNLİKLER</h1>
       </div>
-      <div className="flex justify-center px-4 items-center mt-[40px]">
-        <ul className="flex gap-x-8">
+      <div className="flex relative justify-center px-4 items-center mt-[40px]">
+        <ul className="flex  gap-x-8">
           <li className="active">Tüm Etkinlikler</li>
           <li className="focus:active">Tiyatro</li>
           <li>Konser</li>
