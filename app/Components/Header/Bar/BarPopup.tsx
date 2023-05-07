@@ -1,4 +1,8 @@
-function BarPopup({ setShow }: any) {
+type Bar = {
+  setShow: React.Dispatch<React.SetStateAction<Boolean>>;
+};
+
+function BarPopup({ setShow }: Bar) {
   return (
     <div
       className="popup shadow-xl bg-white mt-2 ml-10 py-6 px-4"
