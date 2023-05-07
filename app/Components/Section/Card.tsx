@@ -11,7 +11,9 @@ function Card() {
             <div className="left relative w-[400px] flex">
               <div className="w-[200px] h-full bg-black"></div>
               <img className="img ml-12" src={card?.img?.src} alt="image" />
-              <span className="tag text-center">{card.tag}</span>
+              <span className={`tag text-center ${card?.color}`}>
+                {card?.tag}
+              </span>
               <span className="text ">{card.date}</span>
             </div>
             <div className="flex flex-1 justify-between ml-2">
