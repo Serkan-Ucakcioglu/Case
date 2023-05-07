@@ -55,7 +55,7 @@ function Card({ card }: Card) {
               {card?.tag}
             </span>
 
-            <div className="flex justify-center items-center gap-2 mb-2">
+            <div className="flex justify-center items-center gap-2 ml-4 mb-2">
               <span className="text-white text-xl">
                 {card?.date?.substring(0, 7)}
               </span>
