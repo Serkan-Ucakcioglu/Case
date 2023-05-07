@@ -4,7 +4,7 @@ import img2 from "../cardimg/2.jpg";
 import img3 from "../cardimg/3.jpg";
 import img4 from "../cardimg/4.jpg";
 
-type Arrays = {
+export type Cards = {
   img: StaticImageData;
   date: String;
   tag: String;
@@ -12,7 +12,7 @@ type Arrays = {
   color: String;
 };
 
-export const arr: Arrays[] = [
+export const arr: Cards[] = [
   {
     img: img4,
     date: "8 Eylül Çarşamba 21:15",

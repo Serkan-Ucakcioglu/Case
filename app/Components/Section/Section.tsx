@@ -1,9 +1,12 @@
+import { arr } from "@/app/data/data";
 import Card from "./Card";
 
 function Section() {
   return (
     <div className="flex w-full flex-col justify-center items-center p-8">
-      <Card />
+      {arr?.map((card) => {
+        return <Card card={card} />;
+      })}
     </div>
   );
 }
