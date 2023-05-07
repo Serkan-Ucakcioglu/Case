@@ -64,7 +64,7 @@ function Card({ card }: Card) {
               </span>
             </div>
 
-            <Image src={card.img.src} alt="logo" />
+            <img src={card.img.src} alt="logo" />
           </div>
           <h1 className="text-black text-center mt-4 font-bold">
             {card.title}
