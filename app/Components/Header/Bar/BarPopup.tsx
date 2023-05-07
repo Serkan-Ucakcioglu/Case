@@ -18,7 +18,8 @@ function BarPopup({ setShow }: Bar) {
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      <div className="flex gap-2 items-center">
+      <h1 className="font-bold mb-3">Etkinlik Alanı</h1>
+      <div className="flex gap-3 items-center border-b p-1 border-gray-100">
         <div className="bg-[#FF0D87] h-5 w-5 flex justify-center items-center">
           <Selected />
         </div>
@@ -26,7 +27,7 @@ function BarPopup({ setShow }: Bar) {
       </div>
       {arr?.map((obj) => {
         return (
-          <div className="flex mt-2 gap-2 items-center">
+          <div className="flex mt-2 p-1 gap-3 border-b last:border-none border-gray-100 items-center">
             <div className="h-5 w-5 border border-gray-200"></div>
             <span className="text-[#000000]">{obj?.name}</span>
           </div>
