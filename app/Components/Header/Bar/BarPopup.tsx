@@ -37,11 +37,11 @@ function BarPopup({ setShow }: Bar) {
       </section>
       <section>
         <h1 className="font-bold mt-8">Etkinlik Tarihi</h1>
-        <div className="flex mt-2 p-1 gap-3 border-b last:border-none border-gray-100 items-center">
+        <div className="flex mt-2 p-1 gap-3 border-b  border-gray-100 items-center">
           <div className="h-5 w-5 border border-gray-200"></div>
           <span className="text-[#000000]">Güncel Etkinlikler</span>
         </div>
-        <div className="flex mt-2 p-1 gap-3 border-b last:border-none border-gray-100 items-center">
+        <div className="flex mt-2 p-1 gap-3 items-center">
           <div className="h-5 w-5 border border-gray-200"></div>
           <span className="text-[#000000]">Geçmiş etkinlikler</span>
         </div>
