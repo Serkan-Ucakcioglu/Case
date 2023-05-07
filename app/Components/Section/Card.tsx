@@ -1,6 +1,7 @@
 import Location from "@/app/assets/Location";
 import Add from "@/app/assets/Add";
 import { Cards } from "../../data/data";
+import img from "../../cardimg/4.jpg";
 
 interface Card {
   card: Cards;
@@ -9,7 +10,7 @@ interface Card {
 function Card({ card }: Card) {
   return (
     <>
-      <div className="card flex mt-4 border border-gray-200">
+      <div className="card hidden sm:flex mt-4 border border-gray-200">
         <div className="left relative w-[400px] flex">
           <div className="w-[200px] h-full bg-black"></div>
           <img className="img ml-12" src={card?.img?.src} alt="image" />
@@ -34,6 +35,36 @@ function Card({ card }: Card) {
             </div>
           </div>
           <div className="flex flex-col gap-y-4 ml-auto mr-5 justify-center items-end">
+            <button className="bg-[#FF0D87] p-2 px-8 text-white">
+              Bilet Al
+            </button>
+            <div className="flex items-center gap-2">
+              <Add />
+              <span>Takvime Ekle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex mt-4  p-2 border border-gray-200 sm:hidden">
+        <div className="flex flex-col">
+          <div className="w-[350px] h-full p-6 bg-black">
+            <span
+              className={`text-white mobile-tag p-1 text-center ${card?.color}`}
+            >
+              {card?.tag}
+            </span>
+            <h1 className="text-center text-white mb-4">{card?.date}</h1>
+            <img src={card.img.src} alt="logo" />
+          </div>
+          <h1 className="text-black text-center mt-4 font-bold">
+            {card.title}
+          </h1>
+          <div className="flex mt-2 justify-center">
+            1978 yılında ilk kez
+            <span className="underline font-bold ml-2">Detaylı Bilgi..</span>
+          </div>
+          <div className="flex justify-center items-center gap-2 mt-4">
             <button className="bg-[#FF0D87] p-2 px-8 text-white">
               Bilet Al
             </button>

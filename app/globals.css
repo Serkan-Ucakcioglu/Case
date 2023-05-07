@@ -96,3 +96,23 @@
   align-items: center;
   color: #000000;
 }
+
+.mobile-img {
+  position: absolute;
+  left: -0.97%;
+  right: -0.97%;
+  top: -10.82%;
+  bottom: -11.08%;
+}
+
+.mobile-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 20px;
+  gap: 10px;
+  position: absolute;
+  left: 10%;
+  width: 100px;
+  height: 22px;
+}

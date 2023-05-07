@@ -22,9 +22,9 @@ export const arr: Cards[] = [
   },
   {
     img: img1,
-    date: "Yasemin Sakallıoğlu",
+    date: "8 Eylül Çarşamba 21:15",
     tag: "STANDUP",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
+    title: "Yasemin Sakallıoğlu",
     color: "bg-[#F19653]",
   },
   {
