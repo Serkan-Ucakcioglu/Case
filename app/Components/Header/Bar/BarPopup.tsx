@@ -9,7 +9,10 @@ function BarPopup({ setShow }: Bar) {
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      se
+      <div className="flex gap-2 items-center">
+        <div className="bg-[#FF0D87] h-5 w-5"></div>
+        <label htmlFor="ch">Maximum Uniq Hall</label>
+      </div>
     </div>
   );
 }

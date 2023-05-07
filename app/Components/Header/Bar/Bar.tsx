@@ -5,7 +5,7 @@ import Points from "@/app/assets/Points";
 import BarPopup from "./BarPopup";
 
 function Bar() {
-  const [show, setShow] = useState<Boolean>(false);
+  const [show, setShow] = useState<Boolean>(true);
   return (
     <>
       <div className="w-full flex justify-between p-4 bg-[#F5F5F5] mt-6 px-12">
