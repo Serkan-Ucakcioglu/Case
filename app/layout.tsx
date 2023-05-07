@@ -1,8 +1,7 @@
+"use client";
+import { store } from "./Features/store";
 import "./globals.css";
-
-export const metadata = {
-  title: "Home Page",
-};
+import { Provider } from "react-redux";
 
 export default function RootLayout({
   children,
@@ -11,7 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Provider store={store}>{children}</Provider>
+      </body>
     </html>
   );
 }
