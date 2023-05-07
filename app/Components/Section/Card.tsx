@@ -54,7 +54,16 @@ function Card({ card }: Card) {
             >
               {card?.tag}
             </span>
-            <h1 className="text-center text-white mb-4">{card?.date}</h1>
+
+            <div className="flex justify-center items-center gap-2 mb-2">
+              <span className="text-white text-xl">
+                {card?.date?.substring(0, 7)}
+              </span>
+              <span className="text-gray-400">
+                {card?.date?.substring(7, card?.date?.length)}
+              </span>
+            </div>
+
             <img src={card.img.src} alt="logo" />
           </div>
           <h1 className="text-black text-center mt-4 font-bold">
