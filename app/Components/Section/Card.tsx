@@ -1,46 +1,44 @@
 import Location from "@/app/assets/Location";
-import img from "../../hor.jpg";
+import img1 from "../../cardimg/1.jpg";
+import img2 from "../../cardimg/2.jpg";
+import img3 from "../../cardimg/3.jpg";
+import img4 from "../../cardimg/4.jpg";
+
 import Add from "@/app/assets/Add";
 
 const arr = [
   {
-    img: img,
+    img: img4,
     date: "8 Eylül Çarşamba 21:15",
     tag: "TİYATRO",
     title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
   },
   {
-    img: img,
+    img: img1,
     date: "Yasemin Sakallıoğlu",
     tag: "STANDUP",
     title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
   },
   {
-    img: img,
+    img: img2,
     date: "8 Eylül Çarşamba 21:15",
     tag: "SİNEMA",
     title: "Sinema Keyfi: Rifkin’s Festival",
   },
   {
-    img: img,
+    img: img4,
     date: "8 Eylül Çarşamba 21:15",
     tag: "TİYATRO",
     title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
   },
   {
-    img: img,
+    img: img1,
     date: "8 Eylül Çarşamba 21:15",
     tag: "TİYATRO",
     title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
   },
   {
-    img: img,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "TİYATRO",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-  {
-    img: img,
+    img: img3,
     date: "8 Eylül Çarşamba 21:15",
     tag: "TİYATRO",
     title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
@@ -55,11 +53,11 @@ function Card() {
           <div className="card flex mt-4 border border-gray-200">
             <div className="left relative w-[400px] flex">
               <div className="w-[200px] h-full bg-black"></div>
-              <img className="img ml-10" src={card?.img?.src} alt="image" />
+              <img className="img ml-12" src={card?.img?.src} alt="image" />
               <span className="tag text-center">{card.tag}</span>
               <span className="text">{card.date}</span>
             </div>
-            <div className="flex flex-1 justify-between">
+            <div className="flex flex-1 justify-between ml-2">
               <div className="right flex mt-6">
                 <div className="content flex gap-2">
                   <h1 className="card-title font-bold">{card.title}</h1>
