@@ -56,12 +56,12 @@ function Card() {
             <div className="left relative w-[400px] flex">
               <div className="w-[200px] h-full bg-black"></div>
               <img className="img ml-10" src={card?.img?.src} alt="image" />
-              <span className="test text-center">{card.tag}</span>
+              <span className="tag text-center">{card.tag}</span>
               <span className="text">{card.date}</span>
             </div>
             <div className="flex flex-1 justify-between">
               <div className="right flex mt-6">
-                <div className="ca flex gap-2">
+                <div className="content flex gap-2">
                   <h1 className="card-title font-bold">{card.title}</h1>
                   <div className="flex items-center gap-x-2">
                     <Location />
