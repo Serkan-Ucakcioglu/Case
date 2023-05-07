@@ -1,5 +1,11 @@
+import Card from "./Card";
+
 function Section() {
-  return <div></div>;
+  return (
+    <div className="flex flex-col justify-center items-center p-8">
+      <Card />
+    </div>
+  );
 }
 
 export default Section;

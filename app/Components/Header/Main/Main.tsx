@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 function Main() {
   return (
     <>
-      <div className="flex relative justify-center px-4 items-center mt-[40px]">
+      <div className="flex relative  justify-center px-4 items-center mt-[40px]">
         <ul className="flex  gap-x-8">
           <li className="active">Tüm Etkinlikler</li>
           <li className="focus:active">Tiyatro</li>
