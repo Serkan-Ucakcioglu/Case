@@ -30,9 +30,12 @@ function BarPopup({ setShow }: Bar) {
           </div>
           <span className="text-[#000000]">Maximum Uniq Hall</span>
         </div>
-        {arr?.map((obj) => {
+        {arr?.map((obj, i) => {
           return (
-            <div className="flex mt-2 p-1 gap-3 border-b last:border-none border-gray-100 items-center">
+            <div
+              key={i + 1}
+              className="flex mt-2 p-1 gap-3 border-b last:border-none border-gray-100 items-center"
+            >
               <div className="h-5 w-5 border border-gray-200"></div>
               <span className="text-[#000000]">{obj?.name}</span>
             </div>
