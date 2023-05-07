@@ -6,8 +6,8 @@ function Section() {
   const data = useAppSelector(selectedData);
   return (
     <div className="flex w-full flex-col justify-center items-center p-8">
-      {data?.map((card) => {
-        return <Card card={card} />;
+      {data?.map((card, i) => {
+        return <Card card={card} key={i + 1} />;
       })}
     </div>
   );
