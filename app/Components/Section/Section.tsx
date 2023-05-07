@@ -2,7 +2,6 @@
 import Card from "./Card";
 import { useAppSelector } from "../../Features/store";
 import { selectedData } from "@/app/Features/searchSlice";
-
 function Section() {
   const data = useAppSelector(selectedData);
   return (
