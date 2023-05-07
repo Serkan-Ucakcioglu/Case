@@ -50,7 +50,7 @@ function Card({ card }: Card) {
         <div className="flex flex-col">
           <div className="w-[350px] h-full p-6 bg-black">
             <span
-              className={`text-white mobile-tag p-1 text-center ${card?.color}`}
+              className={`text-white mobile-tag p-1 mr-4 text-center ${card?.color}`}
             >
               {card?.tag}
             </span>
