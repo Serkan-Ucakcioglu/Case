@@ -13,7 +13,7 @@ function Card({ card }: Card) {
       <div className="card hidden sm:flex mt-4 border border-gray-200">
         <div className="left relative w-[400px] flex">
           <div className="w-[200px] h-full bg-black"></div>
-          <Image className="img ml-12" src={card?.img?.src} alt="image" />
+          <Image className="img ml-12" src={card?.img} alt="image" />
           <span className={`tag text-center ${card?.color}`}>{card?.tag}</span>
           <span className="text ">{card.date}</span>
         </div>
