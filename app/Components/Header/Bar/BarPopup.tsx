@@ -4,8 +4,12 @@ type Bar = {
   setShow: React.Dispatch<React.SetStateAction<Boolean>>;
 };
 
+type arr = {
+  name: String;
+};
+
 function BarPopup({ setShow }: Bar) {
-  const arr = [
+  const arr: arr[] = [
     { name: "Maxium Uniq Box" },
     { name: "Maximum Uniq Lounge" },
     { name: "Maximum Uniq Açıkhava" },
