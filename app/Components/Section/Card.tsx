@@ -1,49 +1,6 @@
 import Location from "@/app/assets/Location";
-import img1 from "../../cardimg/1.jpg";
-import img2 from "../../cardimg/2.jpg";
-import img3 from "../../cardimg/3.jpg";
-import img4 from "../../cardimg/4.jpg";
-
+import { arr } from "../../data/data";
 import Add from "@/app/assets/Add";
-
-const arr = [
-  {
-    img: img4,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "TİYATRO",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-  {
-    img: img1,
-    date: "Yasemin Sakallıoğlu",
-    tag: "STANDUP",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-  {
-    img: img2,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "SİNEMA",
-    title: "Sinema Keyfi: Rifkin’s Festival",
-  },
-  {
-    img: img4,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "TİYATRO",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-  {
-    img: img1,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "TİYATRO",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-  {
-    img: img3,
-    date: "8 Eylül Çarşamba 21:15",
-    tag: "TİYATRO",
-    title: "BKM Yaz Etkinlikleri:Zengin Mutfağı",
-  },
-];
 
 function Card() {
   return (
@@ -55,7 +12,7 @@ function Card() {
               <div className="w-[200px] h-full bg-black"></div>
               <img className="img ml-12" src={card?.img?.src} alt="image" />
               <span className="tag text-center">{card.tag}</span>
-              <span className="text">{card.date}</span>
+              <span className="text ">{card.date}</span>
             </div>
             <div className="flex flex-1 justify-between ml-2">
               <div className="right flex mt-6">
