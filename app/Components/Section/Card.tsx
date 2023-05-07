@@ -13,7 +13,12 @@ function Card({ card }: Card) {
       <div className="card hidden sm:flex mt-4 border border-gray-200">
         <div className="left relative w-[400px] flex">
           <div className="w-[200px] h-full bg-black"></div>
-          <Image className="img ml-12" src={card?.img} alt="image" />
+          <Image
+            loading="lazy"
+            className="img ml-12"
+            src={card?.img}
+            alt="image"
+          />
           <span className={`tag text-center ${card?.color}`}>{card?.tag}</span>
           <span className="text ">{card.date}</span>
         </div>
@@ -64,7 +69,7 @@ function Card({ card }: Card) {
               </span>
             </div>
 
-            <img src={card.img.src} alt="logo" />
+            <img loading="lazy" src={card.img.src} alt="logo" />
           </div>
           <h1 className="text-black text-center mt-4 font-bold">
             {card.title}
