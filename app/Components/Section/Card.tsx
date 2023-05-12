@@ -50,7 +50,7 @@ function Card({ card }: Card) {
           </div>
         </div>
       </div>
-
+      {/* Responsive */}
       <div className="flex mt-4  p-2 border border-gray-200 sm:hidden">
         <div className="flex flex-col">
           <div className="w-[350px] h-full p-6 bg-black">
